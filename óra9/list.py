@@ -34,3 +34,23 @@ print(my_list)
 
 my_list.insert(3-1,"szilva")
 print(my_list)
+
+del(my_list[3])
+print(my_list)
+
+my_list=[3,6,2,8,9,7,1,5]
+
+my_list_copy = my_list.copy()
+print(my_list)
+print(my_list_copy)
+
+my_list.sort()
+print("my_list:", my_list)
+print("My_list:", my_list_copy)
+
+my_list.sort(reverse=True)
+print(my_list)
+print(my_list_copy)
+
+my_list_copy.reverse()
+print(my_list_copy)
