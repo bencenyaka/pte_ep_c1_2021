@@ -16,5 +16,6 @@ except FileNotFoundError:
 
 fileobject2 = open("loren5.txt","w")
 fileobject2.write("Python")
+fileobject2.flush()
 fileobject2.write("Python")
 fileobject2.close()
