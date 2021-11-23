@@ -1,3 +1,5 @@
+tomb=[]
+
 class bmi:
     def __init__(self, kor):
         self.kor = kor
@@ -24,8 +26,40 @@ bmi.magassag = float(input("Magasság: "))
 kalkul = bmi.tomeg/((bmi.magassag/100)**2)
 
 
-fki = open ("mérések.txt","a")
-fki.write("Kor: %d; " %bmi.kor)
+fki = open ("mérések.txt","r+")
+
+
+for sor in fki:
+    sor = sor.strip().split()
+    tomb.append(sor)
+
+
+for sor in tomb:
+    bmi.kor = int(input("Kor: "))
+    sor.append("Kor:")
+    sor.append(str(bmi.kor))
+    sor.append("év |")
+    bmi.tomeg = float(input("Tömeg: "))
+    sor.append("Tömeg:")
+    sor.append(str(bmi.tomeg))
+    sor.append("kg |")
+    bmi.magassag = float(input("Magasság: "))
+    sor.append("Magasság:")
+    sor.append(str(bmi.magassag))
+    sor.append("cm |")
+    kalkul = bmi.tomeg / ((bmi.magassag / 100) ** 2)
+    sor.append(" -->  BMI: ")
+    sor.append(str(kalkul))
+
+fki.seek(0)
+fki.truncate()
+
+for sor in tomb:
+    x=(' '.join(sor))
+    fki.write(x+'\n')
+
+
+'''fki.write("Kor: %d; " %bmi.kor)
 fki.write("Tömeg: %f; " %bmi.tomeg)
 fki.write("Magasság: %f --> " %bmi.magassag)
 fki.write("BMI: %f - " %kalkul)
@@ -40,5 +74,5 @@ if kalkul>=30 and kalkul<=39.9:
     fki.write("Elhízás \n")
 if kalkul>40:
     fki.write("Extrém elhízás \n")
-
+'''
 fki.close()
