@@ -22,7 +22,9 @@ bmi.tomeg = float(input("Tömeg: "))
 bmi.magassag = float(input("Magasság: "))
 
 kalkul = bmi.tomeg/((bmi.magassag/100)**2)
-fki = open ("mérések.txt","w")
+
+
+fki = open ("mérések.txt","a")
 fki.write("Kor: %d; " %bmi.kor)
 fki.write("Tömeg: %f; " %bmi.tomeg)
 fki.write("Magasság: %f --> " %bmi.magassag)

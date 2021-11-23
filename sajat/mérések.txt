@@ -1,1 +1,10 @@
-Kor: 16; Tömeg: 62.000000; Magasság: 169.000000 --> BMI: 21.707923 - Normál testsúly 
+Bence:
+Máté:
+Dominik:
+Levente:
+Noel:
+Dániel:
+Zalán:
+Marcell:
+Olivér:
+Ádám: 
