@@ -1,10 +1,20 @@
-Bence:
-Máté:
-Dominik:
-Levente:
-Noel:
-Dániel:
-Zalán:
-Marcell:
-Olivér:
-Ádám:
+Bence: Kor: 16 év | Tömeg: 54.0 kg | Magasság: 162.0 cm |  -->  BMI:  20.576131687242793 - Normál testsúly 
+
+Máté: Kor: 19 év | Tömeg: 88.0 kg | Magasság: 182.0 cm |  -->  BMI:  26.56683975365294 - Túlsúly 
+
+Dominik: Kor: 12 év | Tömeg: 42.0 kg | Magasság: 165.0 cm |  -->  BMI:  15.426997245179065 - Sovány 
+
+Levente: Kor: 23 év | Tömeg: 92.0 kg | Magasság: 178.0 cm |  -->  BMI:  29.036737785633125 - Túlsúly 
+
+Noel: Kor: 34 év | Tömeg: 72.0 kg | Magasság: 162.0 cm |  -->  BMI:  27.43484224965706 - Túlsúly 
+
+Dániel: Kor: 14 év | Tömeg: 63.0 kg | Magasság: 156.0 cm |  -->  BMI:  25.88757396449704 - Túlsúly 
+
+Zalán: Kor: 9 év | Tömeg: 31.0 kg | Magasság: 150.0 cm |  -->  BMI:  13.777777777777779 - Sovány 
+
+Marcell: Kor: 16 év | Tömeg: 71.0 kg | Magasság: 170.0 cm |  -->  BMI:  24.56747404844291 - Normál testsúly 
+
+Olivér: Kor: 42 év | Tömeg: 90.0 kg | Magasság: 180.0 cm |  -->  BMI:  27.777777777777775 - Túlsúly 
+
+Ádám: Kor: 19 év | Tömeg: 80.0 kg | Magasság: 180.0 cm |  -->  BMI:  24.691358024691358 - Normál testsúly 
+

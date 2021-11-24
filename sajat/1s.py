@@ -33,23 +33,37 @@ for sor in fki:
     tomb.append(sor)
 
 for sor in tomb:
-    print("%s" % sor[0])
-    bmi.kor = int(input("Kor: "))
-    sor.append("Kor:")
-    sor.append(str(bmi.kor))
-    sor.append("év |")
-    bmi.tomeg = float(input("Tömeg: "))
-    sor.append("Tömeg:")
-    sor.append(str(bmi.tomeg))
-    sor.append("kg |")
-    bmi.magassag = float(input("Magasság: "))
-    sor.append("Magasság:")
-    sor.append(str(bmi.magassag))
-    sor.append("cm |")
-    kalkul = bmi.tomeg / ((bmi.magassag / 100) ** 2)
-    sor.append(" -->  BMI: ")
-    sor.append(str(kalkul))
+    try:
+        print("%s" % sor[0])
+        bmi.kor = int(input("Kor: "))
+        sor.append("Kor:")
+        sor.append(str(bmi.kor))
+        sor.append("év |")
+        bmi.tomeg = float(input("Tömeg: "))
+        sor.append("Tömeg:")
+        sor.append(str(bmi.tomeg))
+        sor.append("kg |")
+        bmi.magassag = float(input("Magasság: "))
+        sor.append("Magasság:")
+        sor.append(str(bmi.magassag))
+        sor.append("cm |")
+        kalkul = bmi.tomeg / ((bmi.magassag / 100) ** 2)
+        sor.append(" -->  BMI: ")
+        sor.append(str(kalkul))
+        if kalkul < 18.5:
+            sor.append("- Sovány \n")
+        if kalkul >= 18.5 and kalkul <= 24.9:
+            sor.append("- Normál testsúly \n")
+        if kalkul <= 29.9 and kalkul >= 25:
+            sor.append("- Túlsúly \n")
+        if kalkul >= 30 and kalkul <= 39.9:
+            sor.append("- Elhízás \n")
+        if kalkul > 40:
+            sor.append("- Extrém elhízás \n")
+    except ZeroDivisionError:
+        print("A nulla nem jó érték.")
 
+'''Milyen korban milyen bmi az átlag jó érték.'''
 
 fki.truncate()
 fki.seek(0)
