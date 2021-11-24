@@ -19,13 +19,6 @@ class bmi:
         def __init__(self, magassag):
             self.magassag = magassag
 
-'''bmi.kor = int(input("Kor: "))
-bmi.tomeg = float(input("Tömeg: "))
-bmi.magassag = float(input("Magasság: "))
-
-kalkul = bmi.tomeg/((bmi.magassag/100)**2)
-'''
-
 fki = open("mérések.txt","r+", encoding="utf8")
 
 for sor in fki:
@@ -34,36 +27,39 @@ for sor in fki:
 
 for sor in tomb:
     try:
-        print("%s" % sor[0])
-        bmi.kor = int(input("Kor: "))
+        print("%s" %sor[0])
+
+        bmi.kor = int(input("- Kor: "))
         sor.append("Kor:")
         sor.append(str(bmi.kor))
-        sor.append("év |")
+        sor.append("éves |")
+
         bmi.tomeg = float(input("Tömeg: "))
         sor.append("Tömeg:")
         sor.append(str(bmi.tomeg))
         sor.append("kg |")
+
         bmi.magassag = float(input("Magasság: "))
         sor.append("Magasság:")
         sor.append(str(bmi.magassag))
         sor.append("cm |")
+
         kalkul = bmi.tomeg / ((bmi.magassag / 100) ** 2)
         sor.append(" -->  BMI: ")
         sor.append(str(kalkul))
+
         if kalkul < 18.5:
-            sor.append("- Sovány \n")
+            sor.append("- Sovány //")
         if kalkul >= 18.5 and kalkul <= 24.9:
-            sor.append("- Normál testsúly \n")
+            sor.append("- Normál testsúly //")
         if kalkul <= 29.9 and kalkul >= 25:
-            sor.append("- Túlsúly \n")
+            sor.append("- Túlsúly //")
         if kalkul >= 30 and kalkul <= 39.9:
-            sor.append("- Elhízás \n")
+            sor.append("- Elhízás //")
         if kalkul > 40:
-            sor.append("- Extrém elhízás \n")
+            sor.append("- Extrém elhízás //") #de a list index 0 nem jó - ugorja át azt a sort ami üres
     except ZeroDivisionError:
         print("A nulla nem jó érték.")
-
-'''Milyen korban milyen bmi az átlag jó érték.'''
 
 fki.truncate()
 fki.seek(0)
@@ -71,22 +67,5 @@ fki.seek(0)
 for sor in tomb:
     x=(' '.join(sor))
     fki.write(x+'\n')
-
-'''fki.write("Kor: %d; " %bmi.kor)
-fki.write("Tömeg: %f; " %bmi.tomeg)
-fki.write("Magasság: %f --> " %bmi.magassag)
-fki.write("BMI: %f - " %kalkul)
-
-if kalkul<18.5:
-    fki.write("Sovány \n")
-if kalkul>=18.5 and kalkul<=24.9:
-    fki.write("Normál testsúly \n")
-if kalkul<=29.9 and kalkul>=25:
-    fki.write("Túlsúly \n")
-if kalkul>=30 and kalkul<=39.9:
-    fki.write("Elhízás \n")
-if kalkul>40:
-    fki.write("Extrém elhízás \n")
-'''
 
 fki.close()
