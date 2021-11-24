@@ -1,4 +1,4 @@
-tomb=[]
+tomb = []
 
 class bmi:
     def __init__(self, kor):
@@ -19,22 +19,21 @@ class bmi:
         def __init__(self, magassag):
             self.magassag = magassag
 
-bmi.kor = int(input("Kor: "))
+'''bmi.kor = int(input("Kor: "))
 bmi.tomeg = float(input("Tömeg: "))
 bmi.magassag = float(input("Magasság: "))
 
 kalkul = bmi.tomeg/((bmi.magassag/100)**2)
+'''
 
-
-fki = open ("mérések.txt","r+")
-
+fki = open("mérések.txt","r+", encoding="utf8")
 
 for sor in fki:
     sor = sor.strip().split()
     tomb.append(sor)
 
-
 for sor in tomb:
+    print("%s" % sor[0])
     bmi.kor = int(input("Kor: "))
     sor.append("Kor:")
     sor.append(str(bmi.kor))
@@ -51,13 +50,13 @@ for sor in tomb:
     sor.append(" -->  BMI: ")
     sor.append(str(kalkul))
 
-fki.seek(0)
+
 fki.truncate()
+fki.seek(0)
 
 for sor in tomb:
     x=(' '.join(sor))
     fki.write(x+'\n')
-
 
 '''fki.write("Kor: %d; " %bmi.kor)
 fki.write("Tömeg: %f; " %bmi.tomeg)
@@ -75,4 +74,5 @@ if kalkul>=30 and kalkul<=39.9:
 if kalkul>40:
     fki.write("Extrém elhízás \n")
 '''
+
 fki.close()
