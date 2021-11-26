@@ -1,10 +1,10 @@
-Bence - Kor: 14 éves | Tömeg: 54.0 kg | Magasság: 155.0 cm |  -->  BMI:  22.476586888657646 - 25 testsúly //
-Máté - Kor: 19 éves | Tömeg: 91.0 kg | Magasság: 189.0 cm |  -->  BMI:  25.475210660395845 - Túlsúlyos //
-Kari - Kor: 12 éves | Tömeg: 98.0 kg | Magasság: 199.0 cm |  -->  BMI:  24.74684982702457 - 25 testsúly //
-Mari - Kor: 17 éves | Tömeg: 62.0 kg | Magasság: 152.0 cm |  -->  BMI:  26.83518005540166 - Túlsúlyos //
-jari - Kor: 19 éves | Tömeg: 67.0 kg | Magasság: 176.0 cm |  -->  BMI:  21.62964876033058 - 25 testsúly //
-Lari - Kor: 12 éves | Tömeg: 43.0 kg | Magasság: 167.0 cm |  -->  BMI:  15.418265265875435 - Sovány //
-Uri - Kor: 19 éves | Tömeg: 80.0 kg | Magasság: 180.0 cm |  -->  BMI:  24.691358024691358 - 25 testsúly //
-Firi - Kor: 19 éves | Tömeg: 78.0 kg | Magasság: 160.0 cm |  -->  BMI:  30.468749999999993 - Elhízás //
-Xiri - Kor: 19 éves | Tömeg: 54.0 kg | Magasság: 166.0 cm |  -->  BMI:  19.5964581216432 - 25 testsúly //
-Ari - Kor: 19 éves | Tömeg: 120.0 kg | Magasság: 160.0 cm |  -->  BMI:  46.87499999999999 - Extrém elhízás //
+Bence - Kor: 14 éves | Tömeg: 54.0 kg | Magasság: 155.0 cm | --> BMI: 22.476586888657646 - 25 testsúly // - Kor: 2123 éves | - Kor: 12 éves |
+Máté - Kor: 19 éves | Tömeg: 91.0 kg | Magasság: 189.0 cm | --> BMI: 25.475210660395845 - Túlsúlyos // - Kor: 12 éves | Tömeg: 123.0 kg | Magasság: 1231.0 cm | --> BMI: 0.8116877760480836 - Sovány // - Kor: 31 éves | - Kor: 213 éves | Tömeg: 123.0 kg | Magasság: 123.0 cm |  -->  BMI:  81.30081300813009 - Extrém elhízás //
+Kari - Kor: 12 éves | Tömeg: 98.0 kg | Magasság: 199.0 cm | --> BMI: 24.74684982702457 - 25 testsúly // Tömeg: 123.0 kg | - Kor: 123 éves | Tömeg: 123.0 kg |
+Mari - Kor: 17 éves | Tömeg: 62.0 kg | Magasság: 152.0 cm | --> BMI: 26.83518005540166 - Túlsúlyos // Tömeg: 12312.0 kg | - Kor: 123 éves | Tömeg: 123.0 kg | Magasság: 12.0 cm |  -->  BMI:  8541.666666666666 - Extrém elhízás //
+jari - Kor: 19 éves | Tömeg: 67.0 kg | Magasság: 176.0 cm | --> BMI: 21.62964876033058 - 25 testsúly // - Kor: 123 éves | Tömeg: 123123.0 kg | Magasság: 1231.0 cm | --> BMI: 812.4994638241317 - Extrém elhízás // - Kor: 12312 éves |
+Lari - Kor: 12 éves | Tömeg: 43.0 kg | Magasság: 167.0 cm | --> BMI: 15.418265265875435 - Sovány // - Kor: 3123 éves | Tömeg: 12312.0 kg | Magasság: 123.0 cm | --> BMI: 8138.013087447948 - Extrém elhízás // - Kor: 12 éves |
+Uri - Kor: 19 éves | Tömeg: 80.0 kg | Magasság: 180.0 cm | --> BMI: 24.691358024691358 - 25 testsúly // - Kor: 311 éves |
+Firi - Kor: 19 éves | Tömeg: 78.0 kg | Magasság: 160.0 cm | --> BMI: 30.468749999999993 - Elhízás // - Kor: 12312 éves | Tömeg: 12312.0 kg | - Kor: 12 éves | - Kor: 1231 éves | Tömeg: 123.0 kg |
+Xiri - Kor: 19 éves | Tömeg: 54.0 kg | Magasság: 166.0 cm | --> BMI: 19.5964581216432 - 25 testsúly // - Kor: 12 éves | - Kor: 123 éves |
+Ari - Kor: 19 éves | Tömeg: 120.0 kg | Magasság: 160.0 cm | --> BMI: 46.87499999999999 - Extrém elhízás // - Kor: 12312 éves | - Kor: 12 éves | - Kor: 123 éves | Tömeg: 123.0 kg | Magasság: 123.0 cm |  -->  BMI:  81.30081300813009 - Extrém elhízás //

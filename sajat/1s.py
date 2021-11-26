@@ -68,6 +68,8 @@ for sor in tomb:
             sor.append("- Extrém elhízás //") #de a list index 0 nem jó - ugorja át azt a sort ami üres
     except ZeroDivisionError:
         print("A nulla nem jó érték.")
+    except ValueError:
+        print("Szám értéket kell megadni.") #ha a kor jó és az utána lévő nem -> ne írja ki a kort se
 
 fki.truncate()
 fki.seek(0)
