@@ -1,3 +1,11 @@
+from enum import Enum
+
+class bmi_ertekek(Enum):
+    Sovány = 18.5
+    Normál = 25
+    Túlsúlyos = 30
+    Extrém_túlsúlyos = 40
+
 tomb = []
 
 class bmi:
@@ -30,7 +38,7 @@ for sor in tomb:
         print("%s" %sor[0])
 
         bmi.kor = int(input("- Kor: "))
-        sor.append("Kor:")
+        sor.append("- Kor:")
         sor.append(str(bmi.kor))
         sor.append("éves |")
 
@@ -48,15 +56,15 @@ for sor in tomb:
         sor.append(" -->  BMI: ")
         sor.append(str(kalkul))
 
-        if kalkul < 18.5:
-            sor.append("- Sovány //")
-        if kalkul >= 18.5 and kalkul <= 24.9:
-            sor.append("- Normál testsúly //")
-        if kalkul <= 29.9 and kalkul >= 25:
-            sor.append("- Túlsúly //")
-        if kalkul >= 30 and kalkul <= 39.9:
+        if kalkul < bmi_ertekek.Sovány.value:
+            sor.append("- %s //" %bmi_ertekek.Sovány.name)
+        if kalkul >= bmi_ertekek.Sovány.value and kalkul < bmi_ertekek.Normál.value:
+            sor.append("- %s testsúly //" %bmi_ertekek.Normál.name)
+        if kalkul < bmi_ertekek.Túlsúlyos.value and kalkul >= bmi_ertekek.Normál.value:
+            sor.append("- %s //" %bmi_ertekek.Túlsúlyos.name)
+        if kalkul >= bmi_ertekek.Túlsúlyos.value and kalkul < bmi_ertekek.Extrém_túlsúlyos.value:
             sor.append("- Elhízás //")
-        if kalkul > 40:
+        if kalkul > bmi_ertekek.Extrém_túlsúlyos.value:
             sor.append("- Extrém elhízás //") #de a list index 0 nem jó - ugorja át azt a sort ami üres
     except ZeroDivisionError:
         print("A nulla nem jó érték.")

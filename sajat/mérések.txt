@@ -1,10 +1,10 @@
-Bence Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Máté Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Kari Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Mari Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-jari Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Lari Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Uri Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Firi Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Xiri Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
-Ari Kor: 1 éves | Tömeg: 1.0 kg | Magasság: 1.0 cm |  -->  BMI:  10000.0 - Extrém elhízás //
+Bence - Kor: 14 éves | Tömeg: 54.0 kg | Magasság: 155.0 cm |  -->  BMI:  22.476586888657646 - 25 testsúly //
+Máté - Kor: 19 éves | Tömeg: 91.0 kg | Magasság: 189.0 cm |  -->  BMI:  25.475210660395845 - Túlsúlyos //
+Kari - Kor: 12 éves | Tömeg: 98.0 kg | Magasság: 199.0 cm |  -->  BMI:  24.74684982702457 - 25 testsúly //
+Mari - Kor: 17 éves | Tömeg: 62.0 kg | Magasság: 152.0 cm |  -->  BMI:  26.83518005540166 - Túlsúlyos //
+jari - Kor: 19 éves | Tömeg: 67.0 kg | Magasság: 176.0 cm |  -->  BMI:  21.62964876033058 - 25 testsúly //
+Lari - Kor: 12 éves | Tömeg: 43.0 kg | Magasság: 167.0 cm |  -->  BMI:  15.418265265875435 - Sovány //
+Uri - Kor: 19 éves | Tömeg: 80.0 kg | Magasság: 180.0 cm |  -->  BMI:  24.691358024691358 - 25 testsúly //
+Firi - Kor: 19 éves | Tömeg: 78.0 kg | Magasság: 160.0 cm |  -->  BMI:  30.468749999999993 - Elhízás //
+Xiri - Kor: 19 éves | Tömeg: 54.0 kg | Magasság: 166.0 cm |  -->  BMI:  19.5964581216432 - 25 testsúly //
+Ari - Kor: 19 éves | Tömeg: 120.0 kg | Magasság: 160.0 cm |  -->  BMI:  46.87499999999999 - Extrém elhízás //
