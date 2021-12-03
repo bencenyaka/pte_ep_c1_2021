@@ -1,0 +1,3 @@
+A program beolvassa a névsort, majd tömbökbe rakja.
+A tömbökhöz hozzáadja a személy adatait, melyeket a felhasználó ad meg.
+Miután megvan minden adat (és helyesek is az adatok) visszaírja az eredeti névsor fájljába, de már az adatokkal együtt.

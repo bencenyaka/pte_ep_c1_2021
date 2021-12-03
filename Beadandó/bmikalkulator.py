@@ -4,7 +4,7 @@ class bmi_ertekek(Enum):
     Alultáplált = 18.5
     Normál = 25
     Túlsúlyos = 30
-    Extrém_túlsúlyos = 400
+    Extrém_túlsúlyos = 40
 
 class bmi: #nevekkel és írja a fájlba a nevet
     def __init__(self, kor):
@@ -32,7 +32,7 @@ def kalkulacio():
 
 tomb = []
 
-fki = open("mérések.txt","r+", encoding="utf8")
+fki = open("névsor.txt", "r+", encoding="utf8")
 
 for sor in fki:
     sor = sor.strip().split()
