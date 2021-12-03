@@ -4,7 +4,7 @@ class bmi_ertekek(Enum):
     Alultáplált = 18.5
     Normál = 25
     Túlsúlyos = 30
-    Extrém_túlsúlyos = 40
+    Extrém_túlsúlyos = 400
 
 class bmi: #nevekkel és írja a fájlba a nevet
     def __init__(self, kor):
