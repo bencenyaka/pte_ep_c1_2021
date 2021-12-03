@@ -6,7 +6,8 @@ class bmi_ertekek(Enum):
     Túlsúlyos = 30
     Extrém_túlsúlyos = 40
 
-class bmi: #nevekkel és írja a fájlba a nevet
+class bmi:
+    '''A személy adatai (kor, tömeg, magasság).'''
     def __init__(self, kor):
         self.kor = kor
         self.tomeg = self.tomeg()
@@ -23,7 +24,7 @@ class bmi: #nevekkel és írja a fájlba a nevet
 
     class magassag:
         def __init__(self, magassag):
-            self.magassag = magassag #nevekkel
+            self.magassag = magassag
 
 
 def kalkulacio():
@@ -73,13 +74,13 @@ for sor in tomb:
             sor.append("- Elhízás //")
 
         if kalkulacio() > bmi_ertekek.Extrém_túlsúlyos.value:
-            sor.append("- Extrém elhízás //") #de a list index 0 nem jó - ugorja át azt a sort ami üres
+            sor.append("- Extrém elhízás //")
 
     except ZeroDivisionError:
         print("A nulla nem jó érték.")
 
     except ValueError:
-        print("Szám értéket kell megadni.") #ha a kor jó és az utána lévő nem -> ne írja ki a kort se
+        print("Szám értéket kell megadni.")
         tomb.remove(sor)
 
 fki.truncate()
