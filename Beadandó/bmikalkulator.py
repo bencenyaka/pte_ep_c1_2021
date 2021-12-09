@@ -31,6 +31,10 @@ def kalkulacio():
     kalkul = bmi.tomeg / ((bmi.magassag / 100) ** 2)
     return kalkul
 
+def menu_opciok():
+    print("Válasszon az alábbi menüpontok közül\n\t0 - Kilépés"
+          "\n\t1 - Új személy hozzáadása")
+
 tomb = []
 
 fki = open("névsor.txt", "r+", encoding="utf8")
@@ -81,7 +85,62 @@ for sor in tomb:
 
     except ValueError:
         print("Szám értéket kell megadni.")
-        tomb.remove(sor)
+        del sor[1:]
+
+menu = ""
+while menu != "0":
+    menu_opciok()
+    menu = input()
+    if menu == "1":
+        uj_sor=[]
+        nev = input("Kérem a személy nevét: ")
+        for sor in tomb:
+            try:
+                tomb.append(uj_sor)
+
+                uj_sor.append(nev)
+
+                bmi.kor = int(input("- Kor: "))
+                uj_sor.append("- Kor:")
+                uj_sor.append(str(bmi.kor))
+                uj_sor.append("éves |")
+
+                bmi.tomeg = float(input("Tömeg: "))
+                uj_sor.append("Tömeg:")
+                uj_sor.append(str(bmi.tomeg))
+                uj_sor.append("kg |")
+
+                bmi.magassag = float(input("Magasság: "))
+                uj_sor.append("Magasság:")
+                uj_sor.append(str(bmi.magassag))
+                uj_sor.append("cm |")
+
+                uj_sor.append(" -->  BMI: ")
+                uj_sor.append(str(kalkulacio()))
+
+                if kalkulacio() < bmi_ertekek.Alultáplált.value:
+                    uj_sor.append("- %s //" % bmi_ertekek.Alultáplált.name)
+
+                if kalkulacio() >= bmi_ertekek.Alultáplált.value and kalkulacio() < bmi_ertekek.Normál.value:
+                    uj_sor.append("- %s testsúly //" % bmi_ertekek.Normál.name)
+
+                if kalkulacio() < bmi_ertekek.Túlsúlyos.value and kalkulacio() >= bmi_ertekek.Normál.value:
+                    uj_sor.append("- %s //" % bmi_ertekek.Túlsúlyos.name)
+
+                if kalkulacio() >= bmi_ertekek.Túlsúlyos.value and kalkulacio() < bmi_ertekek.Extrém_túlsúlyos.value:
+                    uj_sor.append("- Elhízás //")
+
+                if kalkulacio() > bmi_ertekek.Extrém_túlsúlyos.value:
+                    uj_sor.append("- Extrém elhízás //")
+
+                break
+
+            except ZeroDivisionError:
+                print("A nulla nem jó érték.")
+
+            except ValueError:
+                print("Szám értéket kell megadni.")
+                tomb.remove(uj_sor)
 
 fki.truncate()
 fki.seek(0)
@@ -91,4 +150,3 @@ for sor in tomb:
     fki.write(x+'\n')
 
 fki.close()
-
